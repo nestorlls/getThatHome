@@ -15,6 +15,10 @@ export default {
       background: '#F5F5F6', // Color de fondo
       backgroundLight: '#E1E2E1', // Color de fondo claro
       white: '#FFFFFF', // Color de texto
+      error: '#FF0000', // Color de error;
+      success: '#008000', // Color de exito
+      warning: '#FFA500', // Color de advertencia
+      info: '#1779D4', // Color de informacion
     },
     fontSize: {
       headline1: [
