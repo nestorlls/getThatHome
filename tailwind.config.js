@@ -14,6 +14,7 @@ export default {
       lightDark: 'rgba(97, 97, 97, 0.15)', // Color oscuro claro
       background: '#F5F5F6', // Color de fondo
       backgroundLight: '#E1E2E1', // Color de fondo claro
+      white: '#FFFFFF', // Color de texto
     },
     fontSize: {
       headline1: [
