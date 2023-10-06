@@ -1,0 +1,38 @@
+.btn {
+  @apply rounded-lg text-button uppercase;
+  @apply flex justify-center items-center gap-2;
+
+  @apply disabled:bg-lightDark disabled:text-mediumDark disabled:opacity-70;
+  @apply disabled:cursor-not-allowed;
+
+  @apply disabled:hover:bg-lightDark disabled:hover:text-mediumDark;
+}
+
+.primary {
+  @apply bg-primary text-background;
+  @apply hover:bg-tertiary;
+}
+
+.secondary {
+  @apply bg-white text-mediumDark;
+  @apply border-l border-r border-t border-b border-secondary;
+  @apply hover:bg-lightPrimary hover:border-tertiary hover:text-dark;
+}
+
+.subtle {
+  @apply bg-white text-mediumDark;
+  @apply text-mediumDark;
+  @apply hover:bg-lightPrimary hover:text-dark;
+}
+
+.small {
+  @apply py-1 px-2;
+}
+
+.medium {
+  @apply py-2 px-4;
+}
+
+.large {
+  @apply py-4 px-6;
+}
