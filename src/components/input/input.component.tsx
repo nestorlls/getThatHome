@@ -42,7 +42,7 @@ export const FormikInput: React.FC<FormikInputProps> = ({
       </div>
 
       {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
+        <div className="error-message">{meta.error}</div>
       ) : null}
     </div>
   );

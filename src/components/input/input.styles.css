@@ -47,3 +47,11 @@
 .full {
   @apply w-full;
 }
+
+.error {
+  @apply border-error;
+}
+
+.error-message {
+  @apply text-error;
+}
