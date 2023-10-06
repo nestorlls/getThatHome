@@ -1,0 +1,49 @@
+.field-wrapper {
+  @apply flex flex-col gap-1;
+}
+
+.field-label {
+  @apply text-mediumDark uppercase text-overline;
+}
+
+.field-wrapper__input {
+  @apply relative;
+}
+
+.icon-left {
+  @apply absolute left-2 top-1/2 -translate-y-1/2 text-mediumDark;
+}
+
+.icon-right {
+  @apply absolute right-2 top-1/2 -translate-y-1/2 text-mediumDark;
+}
+.field-input {
+  @apply border-2 p-2 text-body1;
+  @apply border-primary rounded-lg;
+
+  @apply hover:border-tertiary;
+  /* @apply focus:shadow-outline */
+
+  @apply focus:outline-none;
+  @apply focus:border-tertiary;
+}
+
+.sm {
+  @apply w-32;
+}
+
+.md {
+  @apply w-40;
+}
+
+.lg {
+  @apply w-48;
+}
+
+.xl {
+  @apply w-60;
+}
+
+.full {
+  @apply w-full;
+}
