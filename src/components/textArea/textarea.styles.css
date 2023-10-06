@@ -1,0 +1,70 @@
+.textarea-wrapper {
+  @apply flex flex-col gap-1;
+}
+
+.textarea-label {
+  @apply text-mediumDark uppercase text-overline;
+}
+
+.textarea-wrapper__input {
+  @apply relative;
+}
+
+.icon-left__textarea {
+  @apply absolute left-2 top-6 -translate-y-1/2 text-mediumDark;
+}
+
+.textarea-input {
+  @apply border-2 p-2 text-body1;
+  @apply border-primary rounded-lg;
+
+  @apply hover:border-tertiary;
+  /* @apply focus:shadow-outline */
+
+  @apply focus:outline-none;
+  @apply focus:border-tertiary;
+}
+
+.w-sm {
+  @apply w-32;
+}
+
+.w-md {
+  @apply w-40;
+}
+
+.w-lg {
+  @apply w-48;
+}
+
+.w-xl {
+  @apply w-60;
+}
+
+.full {
+  @apply w-full;
+}
+
+.h-sm {
+  @apply h-20;
+}
+
+.h-md {
+  @apply h-24;
+}
+
+.h-lg {
+  @apply h-28;
+}
+
+.h-xl {
+  @apply h-32;
+}
+
+.error__textarea {
+  @apply border-error;
+}
+
+.error-message__textarea {
+  @apply text-error;
+}
