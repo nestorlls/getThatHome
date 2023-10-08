@@ -1,3 +1,4 @@
 @import '../components/buttton/button.styles.css';
 @import '../components/input/input.styles.css';
-@import '../components//textArea//textarea.styles.css';
+@import '../components/textArea/textarea.styles.css';
+@import '../components/checkbox/checkbox.styles.css';
