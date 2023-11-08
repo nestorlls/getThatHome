@@ -9,11 +9,12 @@
 }
 
 .primary {
-  @apply bg-primary text-background;
-  @apply hover:bg-tertiary;
+  @apply bg-primary text-background !important;
+  @apply hover:bg-tertiary !important;
 }
 
 .secondary {
+  @apply !important;
   @apply bg-white text-mediumDark;
   @apply border-l border-r border-t border-b border-secondary;
   @apply hover:bg-lightPrimary hover:border-tertiary hover:text-dark;
