@@ -2,4 +2,9 @@
 
 @tailwind base;
 @tailwind components;
+
+.label {
+  @apply text-mediumDark uppercase text-overline;
+}
+
 @tailwind utilities;

@@ -10,6 +10,7 @@ interface FormikInputProps {
   placeholder?: string;
   iconLeft?: React.ReactNode;
   iconRight?: React.ReactNode;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const FormikInput: React.FC<FormikInputProps> = ({
@@ -24,7 +25,7 @@ export const FormikInput: React.FC<FormikInputProps> = ({
   return (
     <div className="field-wrapper">
       {label && (
-        <label className="field-label" htmlFor={props.id}>
+        <label className="label" htmlFor={props.id}>
           {label}
         </label>
       )}

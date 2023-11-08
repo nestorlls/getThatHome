@@ -2,10 +2,6 @@
   @apply flex flex-col gap-1;
 }
 
-.field-label {
-  @apply text-mediumDark uppercase text-overline;
-}
-
 .field-wrapper__input {
   @apply relative;
 }
