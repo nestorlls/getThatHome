@@ -1,0 +1,19 @@
+.price-filter__wrapper {
+  @apply w-[247px] h-fit shadow-box p-2 rounded-xl flex flex-col gap-1;
+}
+
+.price-filter__content {
+  @apply flex flex-col gap-4;
+}
+
+.price-filter-inputs__wrapper {
+  @apply flex items-center gap-2 justify-between;
+}
+
+.separator {
+  @apply text-mediumDark w-5 border-t;
+}
+
+.price-filter__btn {
+  @apply flex justify-end;
+}
