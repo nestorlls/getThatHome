@@ -1,0 +1,15 @@
+.property-type__wrapper {
+  @apply flex flex-col gap-2 shadow-box p-2 rounded-xl w-[211px] h-fit;
+}
+
+.property-type__content {
+  @apply flex flex-col gap-4;
+}
+
+.property-type__checkbox {
+  @apply flex justify-between;
+}
+
+.property-type__btn {
+  @apply flex justify-end;
+}
