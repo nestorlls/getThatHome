@@ -1,5 +1,6 @@
-@import url('./input/input.styles.css');
-@import url('./textArea/textarea.styles.css');
+@import url('./formikInput/formikInput.styles.css');
+@import url('./formikTextArea/formikTextarea.styles.css');
+@import url('./formikCheckbox/formikCheckBox.styles.css');
 @import url('./checkbox/checkbox.styles.css');
 @import url('./numberButton/numberButton.styles.css');
 @import url('./buttton/button.styles.css');

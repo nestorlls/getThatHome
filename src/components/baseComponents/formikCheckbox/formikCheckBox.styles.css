@@ -1,0 +1,20 @@
+.formik-checkbox-wrapper {
+  @apply flex;
+}
+
+.formik-checkbox__label {
+  @apply flex items-center gap-1 cursor-pointer relative;
+  @apply text-body2 text-mediumDark;
+}
+
+.formik-checkbox {
+  @apply w-5 h-5 cursor-pointer;
+  @apply border border-primary rounded-sm bg-white;
+  @apply shrink-0 border-2 appearance-none;
+  @apply checked:bg-primary checked:border-0;
+}
+
+.formik-checkbox__checked {
+  @apply w-5 h-5 absolute;
+  @apply top-1/2 left-0 -translate-y-1/2;
+}
