@@ -1,19 +1,37 @@
+import { AiOutlineCheck } from 'react-icons/ai';
+import { IPropertyType } from '../../../common/interfaces';
+
 interface checkBoxProps {
   label: string;
-  id: string;
   name: string;
-  onChange: React.ChangeEventHandler<HTMLInputElement>;
-  iconChecked?: React.ReactNode;
+  values: IPropertyType;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const CheckBox: React.FC<checkBoxProps> = ({ label, ...props }) => {
+export const CheckBox: React.FC<checkBoxProps> = ({
+  label,
+  name,
+  values,
+  onChange,
+  ...props
+}) => {
   return (
     <div className="checkbox-wrapper">
-      <input type="checkbox" className="checkbox peer" {...props} />
-      <label htmlFor={props.id} className="checkbox__label">
+      <label className=" checkbox__label">
+        <span className="checkbox__checked">
+          {values[name as keyof IPropertyType] && (
+            <AiOutlineCheck size={20} color="white" />
+          )}
+        </span>
+        <input
+          type="checkbox"
+          name={name}
+          {...props}
+          className="checkbox"
+          onChange={onChange}
+        />
         {label}
       </label>
-      {props.iconChecked}
     </div>
   );
 };
