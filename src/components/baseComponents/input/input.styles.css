@@ -1,0 +1,29 @@
+.input-wrapper {
+  @apply flex flex-col;
+  @apply relative;
+}
+
+.input-field {
+  @apply border border-primary rounded-lg p-2 text-body1;
+  @apply focus:outline-none;
+}
+
+.icon_left {
+  @apply absolute left-2 top-1/2 -translate-y-1/2 text-mediumDark;
+}
+
+.sm {
+  @apply w-[102px];
+}
+
+.md {
+  @apply w-[200px];
+}
+
+.lg {
+  @apply w-[300px];
+}
+
+.xl {
+  @apply w-[400px];
+}
