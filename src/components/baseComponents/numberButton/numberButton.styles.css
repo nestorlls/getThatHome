@@ -1,8 +1,18 @@
 .btn-number {
-  @apply px-3 py-2 border border-mediumDark;
+  @apply px-3 py-2;
   @apply text-dark text-body2;
+  @apply border-t border-b border-light;
 }
 
 .active {
   @apply bg-primary text-white;
+  @apply border-light border-l;
+}
+
+.left-line {
+  @apply rounded-l-xl border-l;
+}
+
+.right-line {
+  @apply rounded-r-xl border-r;
 }

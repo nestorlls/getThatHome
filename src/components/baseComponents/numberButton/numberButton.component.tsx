@@ -16,9 +16,9 @@ export const NumberButton: React.FC<NumberButtonProps> = ({
   return (
     <button
       className={`btn-number 
-                ${currentValue ? 'active' : ''}
-                ${roundedLeft ? 'rounded-l-xl' : ''} 
-                ${roundedRight ? 'rounded-r-xl' : ''}`}
+                ${currentValue ? 'active' : 'border-l'}
+                ${roundedLeft && 'left-line'} 
+                ${roundedRight && 'right-line'}`}
       onClick={() => getValue(value)}>
       {value === 0 ? 'Any' : value + '+'}
     </button>
