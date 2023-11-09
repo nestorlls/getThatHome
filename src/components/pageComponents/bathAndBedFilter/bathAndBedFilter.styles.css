@@ -1,5 +1,5 @@
 .bath-and-bed {
-  @apply p-2 shadow-box h-[184px];
+  @apply p-2 shadow-box w-[280px] h-[184px] rounded-xl;
   @apply flex flex-col gap-3;
 }
 
