@@ -1,0 +1,16 @@
+.bath-and-bed {
+  @apply p-2 shadow-box h-[184px];
+  @apply flex flex-col gap-3;
+}
+
+.bath-and-bed__container {
+  @apply flex flex-col gap-3;
+}
+
+.bath-and-bed__content {
+  @apply flex flex-col gap-1;
+}
+
+.bath-and-bed__btn {
+  @apply flex flex-1 justify-end;
+}
