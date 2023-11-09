@@ -1,0 +1,8 @@
+.btn-number {
+  @apply px-3 py-2 border border-mediumDark;
+  @apply text-dark text-body2;
+}
+
+.active {
+  @apply bg-primary text-white;
+}
