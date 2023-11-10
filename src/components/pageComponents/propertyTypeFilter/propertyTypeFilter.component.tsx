@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import { Button, CheckBox } from '../../baseComponents';
 import { IPropertyType } from '../../../common/interfaces';
+import { useChange } from '../../../common/hooks';
 
 interface PropertyTypeFilterProps {
   getValues: (value: IPropertyType) => void;
@@ -8,20 +8,13 @@ interface PropertyTypeFilterProps {
 
 export const PropertyTypeFilter: React.FC<PropertyTypeFilterProps> = ({
   getValues,
-}): JSX.Element => {
+}: PropertyTypeFilterProps): JSX.Element => {
   const initialValues: IPropertyType = {
     house: false,
     apartment: false,
   };
 
-  const [propertyTypes, setPropertyTypes] = useState(initialValues);
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const ischecked = e.target.checked;
-    setPropertyTypes({
-      ...propertyTypes,
-      [e.target.name]: ischecked,
-    });
-  };
+  const { state, handleChange } = useChange(initialValues);
 
   return (
     <div className="property-type__wrapper">
@@ -31,13 +24,13 @@ export const PropertyTypeFilter: React.FC<PropertyTypeFilterProps> = ({
           <CheckBox
             name="house"
             label="Houses"
-            values={propertyTypes}
+            values={state}
             onChange={handleChange}
           />
           <CheckBox
             name="apartment"
             label="Apartments"
-            values={propertyTypes}
+            values={state}
             onChange={handleChange}
           />
         </div>
@@ -45,7 +38,7 @@ export const PropertyTypeFilter: React.FC<PropertyTypeFilterProps> = ({
           <Button
             typeBtn="primary"
             size="small"
-            onClick={() => getValues(propertyTypes)}>
+            onClick={() => getValues(state)}>
             done
           </Button>
         </div>
