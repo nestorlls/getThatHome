@@ -1,0 +1,15 @@
+.property-atribuit-wrapper {
+  @apply flex gap-2 items-center text-light;
+}
+
+.a-sm {
+  @apply text-body1;
+}
+
+.a-md {
+  @apply text-headline6 text-mediumDark;
+}
+
+.a-lg {
+  @apply text-headline5 text-dark;
+}

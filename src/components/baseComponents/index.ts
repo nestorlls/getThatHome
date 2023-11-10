@@ -7,4 +7,4 @@ export { CheckBox } from './checkbox/checkbox.component';
 export { NumberButton } from './numberButton/numberButton.component';
 export { CardShip } from './cardShip/cardShip.component';
 export { CardButton } from './cardButton/cardButton.component';
-export { CardPropertyAtribuite } from './cardPropertyAtribuite/cardPropertyAtribuite.component';
+export { PropertyAtribuite } from './propertyAtribuite/propertyAtribuite.component';
