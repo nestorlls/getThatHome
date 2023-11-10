@@ -1,0 +1,3 @@
+.property-atribuit-wrapper {
+  @apply flex gap-2 items-center text-light text-body1;
+}
