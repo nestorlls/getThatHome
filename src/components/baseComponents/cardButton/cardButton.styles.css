@@ -1,0 +1,3 @@
+.card-btn {
+  @apply bg-none flex gap-2 justify-evenly text-white w-[84px] py-1 px-2;
+}
