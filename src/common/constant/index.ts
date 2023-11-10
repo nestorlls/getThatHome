@@ -1,0 +1,1 @@
+export { PROPERTY } from './propertyTypes';
