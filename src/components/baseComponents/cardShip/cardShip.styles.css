@@ -1,0 +1,37 @@
+.card-ship__wrapper {
+  @apply flex items-center justify-evenly py-1 px-2 w-[110px] gap-1;
+}
+
+.type-text {
+  @apply text-white capitalize text-center text-body2;
+}
+
+/* TODO: rent */
+.rent-wrapper {
+  @apply bg-primary;
+}
+
+.rent-icons__wrapper {
+  @apply flex relative items-center pl-3;
+}
+
+.rent-icon {
+  @apply absolute top-1/2 left-1/2;
+}
+
+.rent-icon__first {
+  @apply -translate-x-1/4 -translate-y-3 rotate-12;
+}
+
+.rent-icon__second {
+  @apply -translate-y-1/2 -translate-x-1/2 z-10 bg-primary rounded-full -rotate-12;
+}
+
+/* TODO: Sale */
+.sale-wrapper {
+  @apply bg-tertiary;
+}
+
+.sale-icon__wrapper {
+  @apply -rotate-6;
+}
