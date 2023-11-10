@@ -22,7 +22,7 @@ export const Input: React.FC<InputProps> = ({
   iconLeft,
   onChange,
   ...props
-}): JSX.Element => {
+}: InputProps): JSX.Element => {
   return (
     <div>
       {label && (
@@ -33,8 +33,8 @@ export const Input: React.FC<InputProps> = ({
       <div className="input-wrapper">
         {iconLeft && <span className="icon_left">{iconLeft}</span>}
         <input
-          className={`input-field 
-                    ${iconLeft ? 'pl-8' : ''} 
+          className={`input-field hide 
+                    ${iconLeft ? 'pl-8' : ''}
                     ${size ? size : ''}`.trim()}
           type={type || 'text'}
           id={id}

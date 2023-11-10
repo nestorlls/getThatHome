@@ -12,6 +12,11 @@
   @apply absolute left-2 top-1/2 -translate-y-1/2 text-mediumDark;
 }
 
+.hide {
+  @apply [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none;
+  @apply [&::-webkit-inner-spin-button]:appearance-none;
+}
+
 .sm {
   @apply w-[102px];
 }
