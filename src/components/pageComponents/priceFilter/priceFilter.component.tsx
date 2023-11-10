@@ -1,23 +1,28 @@
-import { useState } from 'react';
+import React from 'react';
 import { Button, Input } from '../../baseComponents';
 import { BiSolidDollarCircle } from 'react-icons/bi';
 import { IPrice } from '../../../common/interfaces/filter.interface';
+import { useChange } from '../../../common/hooks';
 
-export const PriceFilter = () => {
+interface PriceFilterProps {
+  getValues: (values: IPrice) => void;
+}
+
+/**
++ * Renders a price filter component.
++ *
++ * @param {PriceFilterProps} getValues - A function that retrieves the current state values.
++ * @return {JSX.Element} The rendered price filter component.
++ */
+export const PriceFilter: React.FC<PriceFilterProps> = ({
+  getValues,
+}: PriceFilterProps): JSX.Element => {
   const initialValues: IPrice = {
     min: 0,
     max: 0,
   };
 
-  const [values, setValues] = useState(initialValues);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setValues({
-      ...values,
-      [name]: !isNaN(Number(value)) ? Number(value) : 0,
-    });
-  };
+  const { state, handleChange } = useChange(initialValues);
 
   return (
     <div className="price-filter__wrapper">
@@ -29,7 +34,7 @@ export const PriceFilter = () => {
             type="text"
             id="min"
             size="sm"
-            value={values.min}
+            value={state.min}
             onChange={handleChange}
             placeholder="min"
             iconLeft={<BiSolidDollarCircle size={20} color="gray" />}
@@ -40,17 +45,14 @@ export const PriceFilter = () => {
             type="text"
             id="max"
             size="sm"
-            value={values.max}
+            value={state.max}
             onChange={handleChange}
             placeholder="max"
             iconLeft={<BiSolidDollarCircle size={20} color="gray" />}
           />
         </div>
         <div className="price-filter__btn">
-          <Button
-            type="button"
-            size="small"
-            onClick={() => console.log(values)}>
+          <Button type="button" size="small" onClick={() => getValues(state)}>
             done
           </Button>
         </div>
