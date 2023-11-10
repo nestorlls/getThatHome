@@ -31,7 +31,7 @@ export const PriceFilter: React.FC<PriceFilterProps> = ({
         <div className="price-filter-inputs__wrapper">
           <Input
             name="min"
-            type="text"
+            type="number"
             id="min"
             size="sm"
             value={state.min}
@@ -42,7 +42,7 @@ export const PriceFilter: React.FC<PriceFilterProps> = ({
           <span className="separator"></span>
           <Input
             name="max"
-            type="text"
+            type="number"
             id="max"
             size="sm"
             value={state.max}
