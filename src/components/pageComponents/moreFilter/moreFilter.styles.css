@@ -1,0 +1,21 @@
+.more-filter__container {
+  @apply flex flex-col gap-5 p-2 w-[247px] h-fit shadow-box rounded-xl;
+}
+.more-filter__wrapper {
+  @apply flex flex-col gap-2;
+}
+.more-filter__content {
+  @apply flex flex-col gap-4;
+}
+
+.more-filter__input-wrapper {
+  @apply flex items-center justify-between;
+}
+
+.more-filter__btn {
+  @apply flex justify-end;
+}
+
+.more-filter__separator {
+  @apply text-mediumDark w-3 border-t;
+}
