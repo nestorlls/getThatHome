@@ -15,7 +15,7 @@ interface CardPropAtribuitProps<T> {
  * @param props.units - The units of measurement.
  * @returns The rendered component.
  */
-export const CardPropertyAtribuit: React.FC<
+export const CardPropertyAtribuite: React.FC<
   CardPropAtribuitProps<number | boolean>
 > = ({ atribuite, icon, units }) => {
   return (
