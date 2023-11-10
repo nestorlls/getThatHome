@@ -1,0 +1,19 @@
+.card-picture__wrapper {
+  @apply flex justify-center;
+}
+
+.card-picture__image {
+  @apply object-cover;
+}
+
+.p-card {
+  @apply max-w-[300px] max-h-[200px];
+}
+
+.p-page {
+  @apply max-w-[760px] max-h-[400px];
+}
+
+.p-full {
+  @apply w-full h-full;
+}
