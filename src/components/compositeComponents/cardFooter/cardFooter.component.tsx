@@ -1,4 +1,4 @@
-import { CardButton } from '../../baseComponents';
+import { CardButton } from '@components/baseComponents';
 
 export const CardFooter = () => {
   return (

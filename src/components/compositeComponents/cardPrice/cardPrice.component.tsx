@@ -2,7 +2,7 @@ import React from 'react';
 import { BiDollarCircle } from 'react-icons/bi';
 import { PiBuildings } from 'react-icons/pi';
 
-import { PropertyAtribuite } from '../../baseComponents';
+import { PropertyAtribuite } from '@components/baseComponents';
 
 interface ICardPriceProps {
   price: number;

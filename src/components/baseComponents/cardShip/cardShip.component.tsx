@@ -1,5 +1,5 @@
 import { BiSolidDollarCircle, BiDollarCircle } from 'react-icons/bi';
-import { PROPERTY } from '../../../common/constant';
+import { PROPERTY } from '@common/constant';
 
 interface CardShipProps {
   type: string;

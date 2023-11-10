@@ -1,4 +1,4 @@
-import { NumberButton } from '../../baseComponents';
+import { NumberButton } from '@components/baseComponents';
 
 interface CompositeButtonProps {
   array: number[];
