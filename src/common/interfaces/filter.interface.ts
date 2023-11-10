@@ -23,12 +23,8 @@ export interface IPropertyType {
 
 export interface IMore {
   pet: boolean;
-  area: IArea;
-  parking: boolean;
-  garage: boolean;
-}
-
-export interface IArea {
   min: number;
   max: number;
+  parking: boolean;
+  garage: boolean;
 }
