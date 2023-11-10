@@ -1,0 +1,3 @@
+.card-Price__wrapper {
+  @apply flex justify-between items-center py-1;
+}
