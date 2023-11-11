@@ -1,3 +1,4 @@
 .card-footer__wrapper {
-  @apply flex bg-tertiary justify-around items-center gap-2 max-w-[300px] h-[47px] rounded-b-lg;
+  @apply flex justify-around items-center gap-2;
+  @apply max-w-[300px] h-[47px] bg-tertiary;
 }
