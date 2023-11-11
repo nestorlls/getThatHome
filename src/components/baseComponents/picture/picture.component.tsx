@@ -1,8 +1,8 @@
-import { PROPERTY } from '@common/constant';
+// import { PROPERTY } from '@common/constant';
 
 interface ICardPictureProps {
-  image?: string;
-  alt?: string;
+  image: string;
+  alt: string;
   size?: 'p-card' | 'p-page' | 'p-full';
 }
 
@@ -13,11 +13,7 @@ export const Picture: React.FC<ICardPictureProps> = ({
 }): JSX.Element => {
   return (
     <div className={`card-picture__wrapper ${size}`}>
-      <img
-        src={image ?? PROPERTY.URL.PICTURE}
-        alt={alt}
-        className="card-picture__image object-cover"
-      />
+      <img src={image} alt={alt} className="card-picture__image object-cover" />
     </div>
   );
 };
