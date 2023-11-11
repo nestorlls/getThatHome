@@ -1,0 +1,11 @@
+.card-picture__wrapper {
+  @apply max-w-[300px];
+}
+
+.card-picture__composite {
+  @apply relative;
+}
+
+.card-picture__cardShip {
+  @apply absolute top-0 right-0;
+}
