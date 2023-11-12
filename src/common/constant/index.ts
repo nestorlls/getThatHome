@@ -1,2 +1,2 @@
 export { PROPERTY } from './propertyTypes';
-export { SIZEICONS } from './utils';
+export { SIZEICONS, VIEWMODEL } from './utils';
