@@ -1,0 +1,1 @@
+export { splitAddress } from './splitAddress';
