@@ -1,0 +1,17 @@
+.address-wrapper {
+  @apply flex flex-col gap-1;
+}
+
+/* model: card */
+.address-card__text {
+  @apply text-mediumDark text-subtitle1;
+}
+
+/* model: page */
+.address-page__street {
+  @apply text-headline4 text-dark;
+}
+
+.address-page__city {
+  @apply text-subtitle1 text-mediumDark;
+}

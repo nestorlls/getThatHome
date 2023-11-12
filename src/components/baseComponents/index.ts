@@ -9,3 +9,4 @@ export { CardShip } from './cardShip/cardShip.component';
 export { CardButton } from './cardButton/cardButton.component';
 export { Picture } from './picture/picture.component';
 export { PropertyAtribuite } from './propertyAtribuite/propertyAtribuite.component';
+export { AddressProperty } from './addressProperty/addressProperty.component';
