@@ -82,6 +82,7 @@ export default {
     },
     boxShadow: {
       box: '0px 5px 10px 0px rgba(0, 0, 0, 0.20)',
+      card: '0px 20px 30px 0px rgba(0, 0, 0, 0.20)',
     },
     container: {
       center: true,

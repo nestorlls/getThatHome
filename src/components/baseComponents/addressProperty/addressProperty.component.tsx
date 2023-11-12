@@ -1,3 +1,4 @@
+import { VIEWMODEL } from '@common/constant';
 import { splitAddress } from '@utils/functions';
 
 interface IAddressPropertyProps {
@@ -18,7 +19,7 @@ export const AddressProperty: React.FC<IAddressPropertyProps> = ({
 }) => {
   const { street, city, state } = splitAddress(address);
 
-  if (viewModelType === 'card') {
+  if (viewModelType === VIEWMODEL.STYLE.CARD) {
     return (
       <div className="address-wrapper">
         <p className="address-card__text mb-4">{address}</p>
