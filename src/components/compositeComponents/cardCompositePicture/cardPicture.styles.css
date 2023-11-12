@@ -1,5 +1,5 @@
 .card-picture__wrapper {
-  @apply max-w-[300px];
+  @apply max-w-[300px] max-h-[200px];
 }
 
 .card-picture__composite {

@@ -13,6 +13,6 @@ export const PROPERTY = {
   },
   URL: {
     PICTURE:
-      'https://st3.depositphotos.com/23594922/31822/v/450/depositphotos_318221368-stock-illustration-missing-picture-page-for-website.jpg',
+      'https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-scaled.png',
   },
 };

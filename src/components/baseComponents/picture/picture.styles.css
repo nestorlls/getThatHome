@@ -7,7 +7,7 @@
 }
 
 .p-card {
-  @apply max-w-[300px] max-h-[200px];
+  @apply max-w-[300px] min-h-[200px];
 }
 
 .p-page {

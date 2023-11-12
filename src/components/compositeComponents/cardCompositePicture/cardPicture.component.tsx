@@ -3,7 +3,7 @@ import { CardShip, Picture } from '@components/baseComponents';
 import React from 'react';
 
 interface ICardPictureProps {
-  images: (string | undefined)[];
+  images: string[];
   propertyName: string;
   type: string;
 }
