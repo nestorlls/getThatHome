@@ -1,0 +1,3 @@
+.card-wrapper {
+  @apply w-[300px] shadow-card rounded-xl overflow-hidden;
+}

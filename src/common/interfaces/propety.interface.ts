@@ -1,4 +1,5 @@
 export interface IProperty {
+  _id?: string;
   user: string;
   type: string;
   address: string;
