@@ -1,6 +1,7 @@
-import { Button, CheckBox } from '../../baseComponents';
-import { IPropertyType } from '../../../common/interfaces';
-import { useChange } from '../../../common/hooks';
+import { Button, CheckBox } from '@components/baseComponents';
+import { IPropertyType } from '@common/interfaces';
+import { useChange } from '@common/hooks';
+import { BUTTON } from '@common/constant';
 
 interface PropertyTypeFilterProps {
   getValues: (value: IPropertyType) => void;
@@ -36,8 +37,8 @@ export const PropertyTypeFilter: React.FC<PropertyTypeFilterProps> = ({
         </div>
         <div className="property-type__btn">
           <Button
-            typeBtn="primary"
-            size="small"
+            typeBtn={BUTTON.TYPE.PRIMARY}
+            size={BUTTON.SIZE.SMALL}
             onClick={() => getValues(state)}>
             done
           </Button>

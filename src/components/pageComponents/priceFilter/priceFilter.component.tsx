@@ -1,8 +1,9 @@
-import React from 'react';
-import { Button, Input } from '../../baseComponents';
 import { BiSolidDollarCircle } from 'react-icons/bi';
-import { IPrice } from '../../../common/interfaces/filter.interface';
-import { useChange } from '../../../common/hooks';
+
+import { Button, Input } from '@components/baseComponents';
+import { IPrice } from '@common/interfaces/';
+import { useChange } from '@common/hooks';
+import { BUTTON } from '@common/constant';
 
 interface PriceFilterProps {
   getValues: (values: IPrice) => void;
@@ -52,7 +53,10 @@ export const PriceFilter: React.FC<PriceFilterProps> = ({
           />
         </div>
         <div className="price-filter__btn">
-          <Button type="button" size="small" onClick={() => getValues(state)}>
+          <Button
+            type="button"
+            size={BUTTON.SIZE.SMALL}
+            onClick={() => getValues(state)}>
             done
           </Button>
         </div>

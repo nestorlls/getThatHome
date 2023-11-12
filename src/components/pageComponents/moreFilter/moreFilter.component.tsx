@@ -1,6 +1,7 @@
-import { useChange } from '../../../common/hooks';
-import { IMore } from '../../../common/interfaces';
-import { Button, CheckBox, Input } from '../../baseComponents';
+import { useChange } from '@common/hooks';
+import { IMore } from '@common/interfaces';
+import { Button, CheckBox, Input } from '@components/baseComponents';
+import { BUTTON } from '@common/constant';
 
 interface MoreFilterProps {
   getValues: (values: IMore) => void;
@@ -53,8 +54,8 @@ export const MoreFilter: React.FC<MoreFilterProps> = ({
           </div>
           <div className="more-filter__btn">
             <Button
-              typeBtn="primary"
-              size="small"
+              typeBtn={BUTTON.TYPE.PRIMARY}
+              size={BUTTON.SIZE.SMALL}
               onClick={() => getValues(state)}>
               done
             </Button>

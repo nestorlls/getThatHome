@@ -1,7 +1,9 @@
-import { IServices } from '../../../common/interfaces';
-import { Button } from '../../baseComponents';
-import { CompositeButton } from '../../compositeComponents';
 import { useState } from 'react';
+
+import { BUTTON } from '@common/constant';
+import { IServices } from '@common/interfaces';
+import { Button } from '@components/baseComponents';
+import { CompositeButton } from '@components/compositeComponents';
 
 interface BathAndBedFilterProps {
   getValues: (value: IServices) => void;
@@ -66,7 +68,10 @@ export const BathAndBedFilter: React.FC<BathAndBedFilterProps> = ({
         </div>
       </div>
       <div className="bath-and-bed__btn">
-        <Button typeBtn="primary" size="small" onClick={handleSubmit}>
+        <Button
+          typeBtn={BUTTON.TYPE.PRIMARY}
+          size={BUTTON.SIZE.SMALL}
+          onClick={handleSubmit}>
           done
         </Button>
       </div>
