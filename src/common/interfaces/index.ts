@@ -3,6 +3,6 @@ export type {
   IPrice,
   IPropertyType,
   IMore,
-  IArea,
   IServices,
 } from './filter.interface';
+export type { IProperty } from './propety.interface';

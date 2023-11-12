@@ -8,4 +8,11 @@ export const SIZEICONS = {
   FORTY: 40,
   FORTYFIVE: 55,
   FIFTY: 50,
-};
+} as const;
+
+export const VIEWMODEL = {
+  STYLE: {
+    CARD: 'card',
+    PAGE: 'page',
+  },
+} as const;
