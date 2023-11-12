@@ -1,0 +1,15 @@
+.card-call-login__wrapper {
+  @apply w-[226px] h-[184px] shadow-box rounded-lg;
+}
+
+.card-call-login__content {
+  @apply flex flex-col gap-3 items-center justify-center w-full h-full;
+}
+
+.card-call-login__text {
+  @apply text-center text-body1 text-mediumDark;
+}
+
+.card-call-login__btn {
+  @apply flex justify-center;
+}

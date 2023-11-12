@@ -4,3 +4,4 @@ export { CardPropAtribuites } from './cardCompositeAtribuites/cardPropAtribuites
 export { CardPrice } from './cardPrice/cardPrice.component';
 export { CardPicture } from './cardCompositePicture/cardPicture.component';
 export { CardDataProperty } from './cardDataProperty/cardDataProperty.component';
+export { CardCallLogin } from './cardCallLogin/cardCallLogin.component';
