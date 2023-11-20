@@ -1,0 +1,19 @@
+.rol-card__wrapper {
+  @apply shadow-box rounded-lg p-3 w-fit h-[274px] flex flex-col items-center gap-1;
+}
+
+.rol-card__illustrator-wrapper {
+  @apply w-[240px] h-[180px];
+}
+
+.rol-card__text-wrapper {
+  @apply flex flex-col items-center gap-1 w-full text-dark;
+}
+
+.rol-card__rol {
+  @apply text-headline6;
+}
+
+.rol-card__description {
+  @apply text-subtitle2;
+}

@@ -10,3 +10,4 @@ export { CardButton } from './cardButton/cardButton.component';
 export { Picture } from './picture/picture.component';
 export { PropertyAtribuite } from './propertyAtribuite/propertyAtribuite.component';
 export { AddressProperty } from './addressProperty/addressProperty.component';
+export { RolCard } from './rol/rolCard.component';
