@@ -1,0 +1,17 @@
+.form-wrapper {
+  @apply max-w-[388px] gap-2 p-4 shadow-box rounded-lg;
+}
+.form-title {
+  @apply text-headline5 text-center text-dark;
+}
+.form {
+  @apply flex flex-col gap-4;
+}
+
+.form-inputs__wrapper {
+  @apply flex flex-col gap-3;
+}
+
+.form-btn__wrapper {
+  @apply flex justify-center;
+}
