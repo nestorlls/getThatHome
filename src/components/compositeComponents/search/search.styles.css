@@ -1,0 +1,24 @@
+.search {
+  @apply flex items-center gap-2;
+}
+
+.input-search {
+  @apply p-2 border border-primary rounded-xl ease-in duration-100;
+}
+
+.show-search-input {
+  @apply w-full opacity-100 visible;
+  @apply focus:outline-none;
+}
+
+.hide-search-input {
+  @apply w-0 opacity-0 invisible;
+}
+
+.search-btn {
+  @apply flex items-center gap-2 cursor-pointer;
+}
+
+.search-icon {
+  @apply flex items-center gap-1;
+}
