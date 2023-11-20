@@ -13,6 +13,20 @@ interface FormikInputProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
+/**
+ *
+ * @param {FormikInputProps} props The props for the component.
+ * @param {string} props.label The label for the input.
+ * @param {string} props.id The id for the input.
+ * @param {string} props.name The name for the input.
+ * @param {string} props.type The type for the input. Defaults to 'text'.
+ * @param {string} props.value The value for the input. (optional)
+ * @param {string} props.width The width for the input. Defaults to 'full'.
+ * @param {string} props.placeholder The placeholder for the input. (optional)
+ * @param {React.ReactNode} props.iconLeft The icon for the left side of the input. (optional)
+ * @param {React.ReactNode} props.iconRight The icon for the right side of the input. (optional)
+ * @returns {JSX.Element} The rendered component.
+ */
 export const FormikInput: React.FC<FormikInputProps> = ({
   label,
   width = 'full',
