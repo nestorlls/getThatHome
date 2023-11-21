@@ -1,12 +1,20 @@
-import { CiSearch } from 'react-icons/ci';
 import { FC, useState } from 'react';
-import { SIZEICONS } from '@common/constant';
+import { CiSearch } from 'react-icons/ci';
+
+import { BUTTON, SIZEICONS } from '@common/constant';
 import { useChange } from '@common/hooks';
+import { Button } from '@components/baseComponents';
 
 interface ISearchProps {
-  searching: string;
+  searching?: string;
 }
 
+/**
+ *
+ * @param {ISearchProps} props props for the component
+ * @param {string} props.searching the value of displaying the button active search input
+ * @returns {JSX.Element} the rendered component
+ */
 export const Search: FC<ISearchProps> = ({ searching }) => {
   const { state, handleChange } = useChange({ search: '' });
   const [show, setShow] = useState(false);
@@ -25,7 +33,7 @@ export const Search: FC<ISearchProps> = ({ searching }) => {
 
   return (
     <div className="search">
-      <div className={`${show ? 'w-1/2' : 'invisible'}`}>
+      <div className={`${show ? 'w-full' : 'invisible'}`}>
         <input
           onChange={handleChange}
           onBlur={state.search.length > 0 ? () => {} : handleBlur}
@@ -41,14 +49,18 @@ export const Search: FC<ISearchProps> = ({ searching }) => {
       </div>
       <div className="search-btn">
         {show ? (
-          <button onClick={handleSubmit} className="search-icon">
-            <CiSearch size={SIZEICONS.TWENTYFIVE} />
-            search
-          </button>
+          <div className="search-icon">
+            <Button onClick={handleSubmit} typeBtn={BUTTON.TYPE.SUBTLE}>
+              <CiSearch size={SIZEICONS.TWENTY} />
+              {searching === '' ? 'Search' : null}
+            </Button>
+          </div>
         ) : (
-          <div className="search-icon" onClick={handleClick}>
-            <CiSearch size={SIZEICONS.TWENTYFIVE} />
-            {searching}
+          <div className="search-icon">
+            <Button onClick={handleClick} typeBtn={BUTTON.TYPE.SUBTLE}>
+              <CiSearch size={SIZEICONS.TWENTY} />
+              {searching}
+            </Button>
           </div>
         )}
       </div>
