@@ -6,3 +6,4 @@ export { CardPicture } from './cardCompositePicture/cardPicture.component';
 export { CardDataProperty } from './cardDataProperty/cardDataProperty.component';
 export { CardCallLogin } from './cardCallLogin/cardCallLogin.component';
 export { Search } from './search/search.component';
+export { DesktopHeader } from './desktopHeader/descktopHeader.component';

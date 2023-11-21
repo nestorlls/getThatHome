@@ -1,0 +1,21 @@
+.header {
+  @apply max-w-[1136px] w-full;
+}
+
+.logo {
+  @apply block;
+}
+
+.header-wrapper {
+  @apply flex items-center justify-between gap-4;
+}
+
+.nav-bar {
+  @apply flex items-center w-full justify-end;
+}
+.nav-bar-wrapper {
+  @apply flex items-center justify-between gap-4 w-full;
+}
+.btn-prop-saved__wrapper {
+  @apply min-w-[205px] flex justify-center;
+}
