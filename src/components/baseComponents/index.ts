@@ -11,3 +11,4 @@ export { Picture } from './picture/picture.component';
 export { PropertyAtribuite } from './propertyAtribuite/propertyAtribuite.component';
 export { AddressProperty } from './addressProperty/addressProperty.component';
 export { RolCard } from './rol/rolCard.component';
+export { Logo } from './logo/logo.component';

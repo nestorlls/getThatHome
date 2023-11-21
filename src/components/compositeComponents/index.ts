@@ -7,3 +7,4 @@ export { CardDataProperty } from './cardDataProperty/cardDataProperty.component'
 export { CardCallLogin } from './cardCallLogin/cardCallLogin.component';
 export { Search } from './search/search.component';
 export { DesktopHeader } from './desktopHeader/descktopHeader.component';
+export { MobileHeader } from './mobileHeader/mobileHeader.component';
