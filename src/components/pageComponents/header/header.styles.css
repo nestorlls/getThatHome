@@ -1,5 +1,6 @@
 .header-fixed {
-  @apply flex-1 fixed top-1 left-0 right-0;
+  @apply fixed -top-10;
+  @apply lg:flex-1 lg:fixed lg:top-1 lg:left-0 lg:right-0;
 }
 .mobile {
   @apply block;
