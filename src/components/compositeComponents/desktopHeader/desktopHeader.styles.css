@@ -1,5 +1,5 @@
 .header {
-  @apply max-w-[1136px] w-full;
+  @apply w-full p-2;
 }
 
 .logo {

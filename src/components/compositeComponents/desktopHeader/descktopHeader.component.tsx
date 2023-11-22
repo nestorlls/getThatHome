@@ -31,10 +31,10 @@ export const DesktopHeader = () => {
           <Logo />
         </Link>
         <nav className="nav-bar">
-          <div className="nav-bar-wrapper">
+          <span className="nav-bar-wrapper">
             <Search searching="Find a Home" />
             {token ? <DeskTopLogined role={role} /> : <DesckTopLoginOrJoin />}
-          </div>
+          </span>
         </nav>
       </div>
     </div>
