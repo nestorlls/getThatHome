@@ -12,7 +12,7 @@ import {
   IFormLoginSignUpProps,
   ILoginValues,
   ISignUpValues,
-} from 'types/interfaces';
+} from '@type/interfaces';
 
 export const FormLoginSignUp: FC<IFormLoginSignUpProps> = ({
   type,
