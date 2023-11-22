@@ -4,3 +4,4 @@ export { PropertyTypeFilter } from './propertyTypeFilter/propertyTypeFilter.comp
 export { BathAndBedFilter } from './bathAndBedFilter/bathAndBedFilter.component';
 export { CardProperty } from './cardProperty/cardProperty.component';
 export { FormLoginSignUp } from './formLoginSignUp/formLoginSignUp.component';
+export { Header } from './header/header.component';

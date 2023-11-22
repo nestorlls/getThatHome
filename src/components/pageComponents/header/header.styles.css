@@ -1,0 +1,12 @@
+.header-fixed {
+  @apply flex-1 fixed top-1 left-0 right-0;
+}
+.mobile {
+  @apply block;
+  @apply lg:hidden;
+}
+
+.desktop {
+  @apply hidden;
+  @apply lg:block lg:w-full;
+}
