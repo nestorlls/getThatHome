@@ -6,6 +6,15 @@ interface ICardPictureProps {
   size?: 'p-card' | 'p-page' | 'p-full';
 }
 
+/**
+ * Renders a picture component with the given image and alt text.
+ *
+ * @param {ICardPictureProps} props - The props object containing the image, alt, and size of the picture.
+ * @param {string} props.image - The URL of the image.
+ * @param {string} props.alt - The alt text for the image.
+ * @param {string} [props.size='p-full'] - The size of the picture component.
+ * @returns {JSX.Element} The rendered picture component.
+ */
 export const Picture: React.FC<ICardPictureProps> = ({
   image,
   alt,
