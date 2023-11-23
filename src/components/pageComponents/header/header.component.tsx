@@ -1,7 +1,6 @@
 import React, { JSX, useEffect, useRef, useState } from 'react';
 
-import { DesktopHeader } from '@components/compositeComponents';
-import { MobileHeader } from '@components/compositeComponents/mobileHeader/mobileHeader.component';
+import { DesktopHeader, MobileHeader } from '@components/compositeComponents';
 
 /**
  * Renders the header component.
@@ -34,7 +33,7 @@ export const Header: React.FC = (): JSX.Element => {
     <section
       ref={ref_content_header}
       onScroll={handleScroll}
-      className={`header-fixed ${fixed ? 'shadow-box' : ''}`}
+      className={`header-fixed ${fixed ? 'shadow-box bg-white' : ''}`}
     >
       <header className="header  section">
         <span className="mobile  container">
