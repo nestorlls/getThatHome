@@ -7,15 +7,16 @@ import { Logo } from '@components/baseComponents';
 import { Search } from '..';
 
 export const MobileHeader = () => {
+  // TODO: add token
   const token = true;
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const toggleSidebar = () => {
+  const toggleSidebar = (): void => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <nav className="sidebar">
+    <nav className={`sidebar ${isOpen ? 'bg-background' : ''}`}>
       <Link to="/" className="w-20 h-fit cursor-pointer">
         <Logo />
       </Link>
