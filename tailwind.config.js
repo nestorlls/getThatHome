@@ -3,6 +3,19 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {},
+    backgroundImage: {
+      landing: "url('/src/assets/images/landing.png')",
+    },
+    screens: {
+      small: '640px',
+      // => @media (min-width: 640px) { ... }
+      medium: '768px',
+      // => @media (min-width: 768px) { ... }
+      large: '1024px',
+      // => @media (min-width: 1024px) { ... }
+      xlarge: '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
     colors: {
       primary: 'rgba(244, 143, 177, 1)', // Color primario
       secondary: 'rgba(255, 193, 227, 1)', // Color secundario
