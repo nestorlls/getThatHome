@@ -7,8 +7,8 @@ import { BUTTON } from '@common/constant';
 import { SearchBar } from '@components/compositeComponents';
 
 export const Home: React.FC = (): React.JSX.Element => {
+  // TODO: Replace with API
   const [properties, setProperties] = useState([]);
-
   useEffect(() => {
     const respont = async () => {
       const res = await fetch('http://localhost:5000/api/v1/property');
