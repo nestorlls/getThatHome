@@ -33,10 +33,10 @@ export const Header: React.FC = (): JSX.Element => {
     <section
       ref={ref_content_header}
       onScroll={handleScroll}
-      className={`header-fixed ${fixed ? 'shadow-box bg-white' : ''}`}
+      className={`header-fixed ${fixed ? 'shadow-box bg-white' : ''}`.trim()}
     >
-      <header className="header  section">
-        <span className="mobile  container">
+      <header className="header section">
+        <span className="mobile container">
           <MobileHeader />
         </span>
         <span className="desktop container">
