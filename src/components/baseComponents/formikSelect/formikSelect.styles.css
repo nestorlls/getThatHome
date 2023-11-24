@@ -1,0 +1,6 @@
+.select-wrapper {
+  @apply flex flex-col gap-1;
+}
+.select-field {
+  @apply bg-white rounded-lg border border-primary block w-full py-1.5 px-2.5 focus:outline-none text-mediumDark;
+}
