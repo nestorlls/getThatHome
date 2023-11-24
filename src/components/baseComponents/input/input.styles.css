@@ -4,7 +4,7 @@
 }
 
 .input-field {
-  @apply border border-primary rounded-lg p-2 text-body1;
+  @apply border border-primary rounded-lg py-1 px-2 text-body1;
   @apply focus:outline-none;
 }
 
