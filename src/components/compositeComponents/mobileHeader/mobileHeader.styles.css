@@ -1,11 +1,11 @@
 .sidebar {
-  @apply flex gap-2 justify-between items-center fixed top-0 left-0 right-0 z-50 h-14;
-  @apply px-3;
+  @apply flex gap-2 justify-between items-center fixed top-0 left-0 right-0 z-50 h-16;
+  @apply px-4;
 }
 
 .asidebar__wrapper {
-  @apply w-full h-fit absolute inset-y-0 right-0 top-14 transform;
-  @apply transition duration-300 ease-in-out bg-secondary;
+  @apply w-full h-fit absolute inset-y-0 right-0 top-14 transform rounded-xl;
+  @apply transition duration-300 ease-in-out;
 }
 
 .sidebar-link__wrapper {

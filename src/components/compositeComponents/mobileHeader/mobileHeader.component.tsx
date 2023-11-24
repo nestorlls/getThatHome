@@ -16,18 +16,18 @@ export const MobileHeader = () => {
   };
 
   return (
-    <nav className={`sidebar ${isOpen ? 'bg-background' : ''}`}>
+    <nav className={`sidebar ${isOpen ? 'bg-background' : ''}`.trim()}>
       <Link to="/" className="w-20 h-fit cursor-pointer">
         <Logo />
       </Link>
-      <div className="flex">
+      <div className="flex w-[80%] items-center">
         <Search />
         <IoMenuOutline size={SIZEICONS.TWENTYFIVE} onClick={toggleSidebar} />
       </div>
       <aside
         className={`asidebar__wrapper ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
-        } `}
+        }`}
       >
         <ul className="sidebar-link__wrapper">
           <Link to="/" onClick={toggleSidebar}>
