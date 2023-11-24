@@ -3,7 +3,7 @@
 }
 
 .input-search {
-  @apply p-2 border border-primary rounded-xl ease-in-out duration-100;
+  @apply py-1 px-2 border border-primary rounded-xl ease-in-out duration-100;
 }
 
 .show-search-input {
