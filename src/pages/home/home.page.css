@@ -1,0 +1,61 @@
+/*? secion search */
+.section-landing {
+  @apply relative;
+}
+
+.searching-bar {
+  @apply absolute top-4 left-1/2 -translate-x-1/2;
+  @apply w-full flex flex-col items-center gap-3;
+
+  @apply small:absolute small:top-1/2 small:right-1/2 small:left-1/2 small:-translate-x-1/2 small:-translate-y-1/2;
+  @apply small:w-full small:flex small:flex-col small:items-center small:gap-8 small:z-10;
+}
+
+.searching-text__wrapper {
+  @apply flex flex-col items-center gap-3;
+}
+
+.searching-title {
+  @apply text-headline6 text-tertiary;
+  @apply small:text-headline2;
+}
+
+.searching-subtitle {
+  @apply text-body2 text-mediumDark;
+  @apply small:text-headline5;
+}
+
+/*? section cards propeties */
+.home-section__properties {
+  @apply flex flex-col items-center my-10;
+}
+
+.cards-title {
+  @apply text-center py-6;
+}
+
+.cards__title {
+  @apply text-body1 text-mediumDark;
+}
+
+.cards__subtitle {
+  @apply text-headline5 large:text-headline4 text-tertiary;
+}
+
+/*? section call to action */
+.home-section-action {
+  @apply bg-lightPrimary min-h-[312px] flex flex-col justify-center gap-10;
+}
+
+.action-text-wrapper {
+  @apply text-center flex flex-col gap-2;
+}
+
+.action-text {
+  @apply text-body1 text-mediumDark;
+  @apply large:text-headline4;
+}
+
+.action-btn-wrapper {
+  @apply flex justify-center;
+}
