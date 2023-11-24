@@ -13,4 +13,4 @@ export { AddressProperty } from './addressProperty/addressProperty.component';
 export { RolCard } from './rol/rolCard.component';
 export { Logo } from './logo/logo.component';
 export { GoogleMapWrapper } from './google-map/google-map.component';
-export { LandLordIllustrator } from './illustrators/landLord.component';
+export { LandingIllustrator } from './landing/landing.component';

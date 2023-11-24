@@ -1,0 +1,10 @@
+.illustraton-wrapper {
+  @apply bg-landing bg-cover bg-center;
+  @apply h-[180px] min-w-full bg-repeat-round;
+
+  @apply small:h-[250px] small:min-w-full;
+
+  @apply large:h-[400px] large:max-w-[800px];
+
+  @apply xlarge:h-[500px] xlarge:bg-repeat-round;
+}
