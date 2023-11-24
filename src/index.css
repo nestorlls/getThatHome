@@ -16,3 +16,13 @@
 .container {
   @apply mx-auto;
 }
+
+.grid-cards {
+  @apply grid justify-items-center gap-4 gap-y-6;
+
+  @apply small:grid-cols-2 small:w-[640px];
+
+  @apply large:grid-cols-3 large:w-[980px];
+
+  /* @apply xlarge:grid-cols-3 xlarge:w-[960px]; */
+}
