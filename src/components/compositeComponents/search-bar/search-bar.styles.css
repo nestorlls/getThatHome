@@ -1,5 +1,5 @@
 .search-wrapper {
-  @apply w-[80%] bg-background bg-opacity-70 shadow-box p-4 rounded-xl;
+  @apply w-[80%] bg-white shadow-box p-4 rounded-xl;
   @apply small:w-auto;
 }
 .form-search {
