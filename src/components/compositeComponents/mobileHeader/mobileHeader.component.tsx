@@ -8,7 +8,7 @@ import { Search } from '..';
 
 export const MobileHeader = () => {
   // TODO: add token
-  const token = true;
+  const token = false;
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleSidebar = (): void => {
@@ -33,7 +33,12 @@ export const MobileHeader = () => {
           <Link to="/" onClick={toggleSidebar}>
             <li className="sidebar-link">Home</li>
           </Link>
-          {token ? <Logined toggleSidebar={toggleSidebar} /> : <LoingOrJoin />}
+          {/* TODO: reafactore this */}
+          {token ? (
+            <Logined toggleSidebar={toggleSidebar} />
+          ) : (
+            <LoingOrJoin toggleSidebar={toggleSidebar} />
+          )}
         </ul>
       </aside>
     </nav>
@@ -60,13 +65,14 @@ function Logined({ toggleSidebar }: { toggleSidebar: () => void }) {
   );
 }
 
-function LoingOrJoin() {
+// TODO: refactore this
+function LoingOrJoin({ toggleSidebar }: { toggleSidebar: () => void }) {
   return (
     <>
-      <Link to="/join">
+      <Link to="/signup" onClick={toggleSidebar}>
         <li className="sidebar-link">Join</li>
       </Link>
-      <Link to="/login">
+      <Link to="/login" onClick={toggleSidebar}>
         <li className="sidebar-link">login</li>
       </Link>
     </>

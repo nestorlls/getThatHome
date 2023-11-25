@@ -21,7 +21,8 @@ import { Search } from '..';
  * ```
  */
 export const DesktopHeader = () => {
-  const token = true;
+  // TODO: add token and role
+  const token = false;
   const role = 'landlord';
 
   return (
