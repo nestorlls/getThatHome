@@ -1,5 +1,6 @@
 .rol-card__wrapper {
   @apply shadow-box rounded-lg p-3 w-fit h-[274px] flex flex-col items-center gap-1;
+  @apply bg-white;
 }
 
 .rol-card__illustrator-wrapper {
