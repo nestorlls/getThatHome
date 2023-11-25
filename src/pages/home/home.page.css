@@ -4,7 +4,7 @@
 }
 
 .searching-bar {
-  @apply absolute top-4 left-1/2 -translate-x-1/2;
+  @apply absolute top-20 left-1/2 -translate-x-1/2;
   @apply w-full flex flex-col items-center gap-3;
 
   @apply small:absolute small:top-1/2 small:right-1/2 small:left-1/2 small:-translate-x-1/2 small:-translate-y-1/2;
@@ -16,13 +16,15 @@
 }
 
 .searching-title {
-  @apply text-headline6 text-tertiary;
-  @apply small:text-headline2;
+  @apply text-headline5 text-tertiary;
+  @apply medium:text-headline3;
+  @apply large:text-headline2;
 }
 
 .searching-subtitle {
   @apply text-body2 text-mediumDark;
-  @apply small:text-headline5;
+  @apply medium:text-headline6;
+  @apply large:text-headline5;
 }
 
 /*? section cards propeties */
