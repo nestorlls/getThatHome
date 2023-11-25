@@ -1,6 +1,6 @@
 .header-fixed {
   @apply fixed top-0 left-0 right-0 z-50 h-16 ease-in-out duration-300;
-  @apply large:flex-1 large:fixed large:top-0 large:left-0 large:right-0 large:z-50 large:h-20;
+  @apply small:flex-1 small:fixed small:top-0 small:left-0 small:right-0 small:z-50 small:h-16;
 }
 .mobile {
   @apply block;
