@@ -32,6 +32,7 @@ export default {
       success: '#008000', // Color de exito
       warning: '#FFA500', // Color de advertencia
       info: '#1779D4', // Color de informacion
+      black: 'rgba(0, 0, 0, 1)',
     },
     fontSize: {
       headline1: [
