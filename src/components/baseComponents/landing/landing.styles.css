@@ -1,10 +1,15 @@
 .illustraton-wrapper {
   @apply bg-landing bg-cover bg-center;
-  @apply h-[380px] min-w-full bg-repeat-round;
+  @apply h-[480px] w-full bg-repeat-x;
+
+  @apply after:h-[380px] after:w-full after:absolute after:top-0 after:left-0 after:bg-black after:opacity-5;
 
   @apply small:h-[450px] small:min-w-full;
+  @apply small:after:h-[450px];
 
   @apply large:h-[560px] large:max-w-[800px];
+  @apply large:after:h-[560px];
 
   @apply xlarge:h-[650px] xlarge:bg-repeat-round;
+  @apply xlarge:after:h-[650px];
 }
