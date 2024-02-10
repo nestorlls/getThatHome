@@ -9,3 +9,4 @@ export { Search } from './search/search.component';
 export { DesktopHeader } from './desktopHeader/descktopHeader.component';
 export { MobileHeader } from './mobileHeader/mobileHeader.component';
 export { SearchBar } from './search-bar/search-bar.component';
+export { ChooseRolCard } from './choose-rol-card/choose-rol-card.component';
