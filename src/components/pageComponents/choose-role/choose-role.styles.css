@@ -1,0 +1,18 @@
+.signup-card__wrapper {
+  @apply flex flex-col w-[90%] gap-3;
+  @apply absolute top-[48%] left-1/2 -translate-x-1/2 -translate-y-1/2;
+  @apply small:top-[45%] small:gap-6;
+}
+.signup-text__wrapper {
+  @apply flex flex-col items-center;
+}
+
+.signup-title {
+  @apply text-subtitle1 text-mediumDark;
+  @apply small:text-headline5;
+}
+
+.signup-subtitle {
+  @apply text-headline6  text-mediumDark;
+  @apply small:text-headline2;
+}
