@@ -1,0 +1,5 @@
+/*? card roles */
+.card-roles__wrapper {
+  @apply flex flex-col gap-6 justify-center items-center;
+  @apply small:flex-row small:gap-12;
+}
