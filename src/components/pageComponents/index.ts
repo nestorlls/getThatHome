@@ -6,3 +6,4 @@ export { CardProperty } from './cardProperty/cardProperty.component';
 export { FormLoginSignUp } from './formLoginSignUp/formLoginSignUp.component';
 export { Header } from './header/header.component';
 export { Footer } from './footer/footer.component';
+export { ChooseRole } from './choose-role/choose-role.component';
