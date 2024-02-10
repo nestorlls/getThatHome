@@ -32,7 +32,7 @@ export const FormLoginSignUp: FC<IFormLoginSignUpProps> = ({
     password: '',
   };
 
-  // handler submit
+  // todo: change ANY - handler submit
   const handleSubmit = (values: any) => {
     console.log(values);
   };
