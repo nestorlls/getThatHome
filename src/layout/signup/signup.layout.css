@@ -1,0 +1,20 @@
+.signup-wrapper {
+  @apply h-[120vh] relative;
+  @apply flex items-center flex-col justify-center;
+
+  @apply small:h-[100vh];
+}
+
+.child-first {
+  @apply h-[60vh] w-full;
+  @apply bg-lightPrimary;
+
+  @apply small:h-[50vh];
+}
+
+.child-second {
+  @apply h-[60vh] w-full;
+  @apply bg-white;
+
+  @apply small:h-[50vh];
+}
