@@ -15,3 +15,5 @@ export { Logo } from './logo/logo.component';
 export { GoogleMapWrapper } from './google-map/google-map.component';
 export { LandingIllustrator } from './landing/landing.component';
 export { FormikSelect } from './formikSelect/formikSelect.component';
+export { LandLordIllustrator } from './illustrators/landLord.component';
+export { SeekerIllustration } from './illustrators/seeker.component';
