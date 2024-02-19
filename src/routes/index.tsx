@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Home } from '@pages/home/home.page';
 import { Footer, Header } from '@components/pageComponents';
-import { SignUpSeeker, Signup, SignupLandLord } from '@pages/index';
+import { Signup, SignupForm } from '@pages/index';
 
 export const RoutesPages: React.FC = (): React.JSX.Element => {
   const token = false;
@@ -20,8 +20,7 @@ export const RoutesPages: React.FC = (): React.JSX.Element => {
         ) : (
           <>
             <Route path="/signup" element={<Signup />} />
-            <Route path="/signup/:role" element={<SignupLandLord />} />
-            <Route path="/signup/homeseeker" element={<SignUpSeeker />} />
+            <Route path="/signup/:role" element={<SignupForm />} />
 
             <Route path="/login" element={'Join'} />
           </>
