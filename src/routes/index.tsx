@@ -21,8 +21,6 @@ export const RoutesPages: React.FC = (): React.JSX.Element => {
           <>
             <Route path="/signup" element={<Signup />} />
             <Route path="/signup/:role" element={<SignupForm />} />
-
-            <Route path="/login" element={'Join'} />
           </>
         )}
       </Routes>
