@@ -1,5 +1,5 @@
 .form-wrapper {
-  @apply max-w-[388px] gap-2 p-4 shadow-box rounded-lg;
+  @apply max-w-[388px] gap-2 p-4 shadow-box rounded-lg m-auto bg-background;
 }
 .form-title {
   @apply text-headline5 text-center text-dark;

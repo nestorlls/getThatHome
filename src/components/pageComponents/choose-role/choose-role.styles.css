@@ -13,6 +13,6 @@
 }
 
 .signup-subtitle {
-  @apply text-headline6  text-mediumDark;
+  @apply text-headline6  text-mediumDark text-center;
   @apply small:text-headline2;
 }
